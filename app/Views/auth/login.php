@@ -1,5 +1,5 @@
 <h1 class="text-xl font-bold mb-4">Ingreso</h1>
-<form method="POST" action="/login" class="bg-white p-4 rounded shadow">
+<form method="POST" action="/login" class="bg-white p-6 rounded-lg shadow max-w-md mx-auto">
     <div class="mb-2">
         <label class="block">Email</label>
         <input type="email" name="email" class="border p-2 w-full" required>
