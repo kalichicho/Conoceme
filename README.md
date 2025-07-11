@@ -95,15 +95,3 @@ END;
 -- Restaurar delimitador estándar
 DELIMITER ;
 -- ==============================================
-
-## Ejecutar la aplicación de ejemplo
-
-1. Instalar dependencias y generar el autoloader:
-   ```bash
-   composer dump-autoload
-   ```
-2. Configurar los datos de conexión en `config/database.php`.
-3. Apuntar el DocumentRoot de tu servidor web al directorio `public/`.
-4. Visitar `http://localhost/` para ver los anuncios publicados.
-
-Esta aplicación usa un esquema MVC básico en PHP y Tailwind para la presentación.
