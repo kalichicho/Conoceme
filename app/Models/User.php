@@ -14,18 +14,8 @@ class User
 
     public function create($data)
     {
-        $stmt = $this->db->prepare(
-            "INSERT INTO usuarios (nombre, apellido, email, password_hash, telefono, fecha_nacimiento) VALUES (?, ?, ?, ?, ?, ?)"
-        );
-        $stmt->bind_param(
-            'ssssss',
-            $data['nombre'],
-            $data['apellido'],
-            $data['email'],
-            $data['password'],
-            $data['telefono'],
-            $data['fecha_nacimiento']
-        );
+        $stmt = $this->db->prepare("INSERT INTO usuarios (nombre, apellido, email, password_hash, fecha_nacimiento) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param('sssss', $data['nombre'], $data['apellido'], $data['email'], $data['password'], $data['fecha_nacimiento']);
         return $stmt->execute();
     }
 

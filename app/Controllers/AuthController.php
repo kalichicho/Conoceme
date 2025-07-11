@@ -29,7 +29,6 @@ class AuthController extends Controller
             'apellido' => $_POST['apellido'] ?? '',
             'email' => $_POST['email'] ?? '',
             'password' => password_hash($_POST['password'] ?? '', PASSWORD_BCRYPT),
-            'telefono' => $_POST['telefono'] ?? '',
             'fecha_nacimiento' => $_POST['fecha_nacimiento'] ?? '',
         ];
         $user->create($data);
