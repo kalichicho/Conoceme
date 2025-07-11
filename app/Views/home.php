@@ -1,10 +1,4 @@
-<div class="text-center bg-white p-6 rounded-lg shadow mb-6">
-    <h1 class="text-3xl font-semibold mb-2">Bienvenido a Conóceme</h1>
-    <p class="text-gray-700 mb-4">Encuentra o publica servicios de manera sencilla.</p>
-    <a href="/register" class="bg-blue-600 text-white px-4 py-2 rounded">Registrarse</a>
-</div>
-
-<h2 class="text-2xl font-bold mb-4">Anuncios</h2>
+<h1 class="text-2xl font-bold mb-4">Anuncios</h1>
 <?php if (empty($ads)): ?>
 <p>No hay anuncios disponibles.</p>
 <?php else: ?>
