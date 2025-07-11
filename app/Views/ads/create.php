@@ -1,5 +1,5 @@
 <h1 class="text-xl font-bold mb-4">Publicar Anuncio</h1>
-<form method="POST" action="/ads" class="bg-white p-4 rounded shadow" enctype="multipart/form-data">
+<form method="POST" action="ads" class="bg-white p-4 rounded shadow" enctype="multipart/form-data">
     <div class="mb-2">
         <label class="block">Título</label>
         <input type="text" name="titulo" class="border p-2 w-full" required>
