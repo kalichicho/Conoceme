@@ -95,3 +95,18 @@ END;
 -- Restaurar delimitador estándar
 DELIMITER ;
 -- ==============================================
+
+## Ejecutar la aplicación de ejemplo
+
+1. Instalar dependencias y generar el autoloader:
+   ```bash
+   composer dump-autoload
+   ```
+2. Configurar los datos de conexión en `config/database.php`.
+3. Puedes apuntar el DocumentRoot al directorio del proyecto. El archivo
+   `index.php` ubicado en la raíz redirige automáticamente a `public/`, por lo
+   que no es necesario cambiar la configuración del servidor.
+4. Visita `http://localhost/conoceme` (ajustando la ruta según corresponda) y
+   se te mostrará la página de inicio.
+
+Esta aplicación usa un esquema MVC básico en PHP y Tailwind para la presentación.
